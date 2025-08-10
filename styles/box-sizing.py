@@ -12,34 +12,43 @@ Where the fear has gone there will be nothing. Only I will remain."""
 
 class MyApp(App):
 
-    CSS = """
-    Screen {
-        align: center middle
-    }
-    """
-
     def compose(self) -> ComposeResult:
 
         self.widget1 = Static(TEXT)
         yield self.widget1
 
-    def on_mount(self) -> None:
+        self.widget2 = Static(TEXT)
+        yield self.widget2
 
-        # self.widget1.styles.align = ("center", "middle")
+    def on_mount(self) -> None:
 
         self.screen.styles.background = "darkslategray"
 
         self.widget1.styles.background = "darkslategray"
-        self.widget1.styles.width = "60"
-        self.widget1.styles.height = "15"
+        self.widget1.styles.width = "30"
+        self.widget1.styles.height = "6"
 
-        self.widget1.styles.padding = (2, 4)
-        self.widget1.styles.margin = (0, 0)
+        self.widget1.styles.padding = 1
+        self.widget1.styles.margin = 2
 
         self.widget1.styles.border = ("panel", "black")
-        self.widget1.border_title = "Litany against fear"
+        self.widget1.border_title = "Default border box"
         self.widget1.border_subtitle = "By Frank Hubert, in 'Dune'"
         self.widget1.styles.border_title_align = "center"
+
+        self.widget2.styles.background = "darkslategray"
+        self.widget2.styles.width = "30"
+        self.widget2.styles.height = "6"
+
+        self.widget2.styles.padding = 1
+        self.widget2.styles.margin = 2
+
+        self.widget2.styles.border = ("panel", "black")
+        self.widget2.border_title = "Content Box"
+        self.widget2.border_subtitle = "By Frank Hubert, in 'Dune'"
+        self.widget2.styles.border_title_align = "center"
+
+        self.widget2.styles.box_sizing = "content-box"
 
     def on_key(self) -> None:
         self.exit()

@@ -1,0 +1,29 @@
+/*Container*/
+
+#dialog { 
+  height: 100%;
+  margin: 4 8;
+  background: $panel;
+  color: $text;
+  border: panel $background;
+  padding: 1 2;
+}
+
+Button {
+  width: 1fr;
+  margin: 1;
+}
+
+.question {
+  text-style: bold;
+  height: 100%;
+  content-align: center middle;
+}
+
+.button {
+  width: 100%;
+  height: auto;
+  dock: bottom;
+}
+
+
