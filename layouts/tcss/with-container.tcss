@@ -1,0 +1,13 @@
+
+Static{
+  content-align: center middle;
+  background: lavenderblush;
+  color: black;
+  border: panel slategray;
+  height: 1fr;
+  margin: 1;
+}
+
+.column{
+  width: 1fr;
+}
