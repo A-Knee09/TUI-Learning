@@ -1,0 +1,16 @@
+Screen{
+  layout: grid;
+  grid-gutter: 2;
+  grid-size: 3;
+}
+
+.box{
+  height: 100%;
+  border: double green;
+  content-align: center middle;
+}
+
+#two{
+  column-span: 2;
+
+}

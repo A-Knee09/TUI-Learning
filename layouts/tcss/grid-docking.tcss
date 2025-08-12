@@ -1,0 +1,12 @@
+#sidebar{
+  dock: left;
+  width: 15;
+  height: 100%;
+  color: orange;
+  background: dodgerblue;
+  content-align: center middle;
+}
+
+#body{
+  content-align: center middle;
+}
