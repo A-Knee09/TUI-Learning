@@ -14,7 +14,7 @@ KeyLogger {
 }
 
 KeyLogger:hover {
-    border: wide $secondary;
+    border: wide darkslategray;
 }
 
 KeyLogger:focus {
