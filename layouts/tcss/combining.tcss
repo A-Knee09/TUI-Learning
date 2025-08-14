@@ -8,7 +8,7 @@
 #left-pane {
   row-span: 2;  /* Spans both rows */
   background: $panel;
-  border: ascii dodgerblue;
+  border: round dodgerblue;
   padding: 1;
 }
 
@@ -22,8 +22,9 @@
 
 #top-right {
   background: $panel;
-  border: ascii mediumvioletred;
-  layout: horizontal; 
+  border: round mediumvioletred;
+  layout: horizontal;
+  padding: 1;
 }
 
 #top-right > Static {
@@ -41,7 +42,8 @@
   grid-rows: 1fr 1fr;
   grid-gutter: 1;
   background: $panel;
-  border: ascii red;
+  border: round red;
+  padding: 1;
 }
 
 #bottom-right > Static {

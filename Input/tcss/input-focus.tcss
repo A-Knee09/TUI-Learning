@@ -1,0 +1,22 @@
+Screen {
+  layout: grid;
+  grid-size: 2 2;
+  grid-columns: 1fr;
+  padding: 1;
+  background: black;
+}
+
+KeyLogger {
+  border: blank;
+  margin: 1 1;
+  padding: 1 1;
+  background: black;
+}
+
+KeyLogger:hover {
+    border: wide $secondary;
+}
+
+KeyLogger:focus {
+    border: round $accent;
+}
